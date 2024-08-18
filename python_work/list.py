@@ -49,3 +49,80 @@ print(people)
 
 for person in people:
     print(f"hello everyone {person} cannot make it, see you all later")
+
+
+new_guests = ["Caro", "Ana", "Flor Alba"]
+print(f"Hello everyone we found a bigger table")
+
+people.insert(0, new_guests[0])
+people.insert(3, new_guests[1])
+people.append(new_guests[2])
+
+print(people)
+
+for person in people:
+    print(f"Hello {person} we would like to invite you to my party! Would you like to assist?")
+
+
+print(f"That me again, unfortunately we can invite just two people")
+person_remove = people.pop()
+print(f"Sorry {person_remove} we cannot invite you to the dinner")
+person_remove = people.pop()
+print(f"Sorry {person_remove} we cannot invite you to the dinner")
+person_remove = people.pop()
+print(f"Sorry {person_remove} we cannot invite you to the dinner")
+person_remove = people.pop()
+print(f"Sorry {person_remove} we cannot invite you to the dinner")
+person_remove = people.pop()
+print(f"Sorry {person_remove} we cannot invite you to the dinner")
+
+del people[0]
+del people[0]
+
+print(people)
+
+# sort
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+cars.sort(reverse=True)
+print(cars)
+
+# sort list temporarily
+cars_v2 = ['bmw', 'audi', 'toyota', 'subaru']
+print(sorted(cars_v2, reverse=True))
+print(cars_v2)
+
+# reverse
+cars_v3 = ['bmw', 'audi', 'toyota', 'subaru']
+cars_v3.reverse()
+print(f"reverse: {cars_v3}")
+
+# length
+
+print(len(cars_v3))
+
+
+visit_places = ["calafate", "lisboa", "buenos aires", "madrid"]
+print(visit_places)
+print(sorted(visit_places))
+print(sorted(visit_places, reverse=True))
+visit_places.reverse()
+print(visit_places)
+visit_places.sort()
+print(visit_places)
+visit_places.sort(reverse=True)
+print(visit_places)
+visit_places.reverse()
+print(visit_places)
+visit_places.sort()
+print(visit_places)
+
+print(len(new_guests))
+
+last_item = visit_places[-1]
+print(last_item)
+
+
